@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+var vector1=[];
+var f;
+for(f=0;f<10;f++)
+  {
+    vector1[f]=parseInt(1+(Math.random()*500));    
+  }
+  var vector2=[];
+  var vector3=[];
+  var veces1=0;
+  var veces2=0;
+  for(f=0;f<vector1.length;f++)
+  {
+    if(vector1[f]<250)
+    {
+      vector2[veces1]=vector1[f];
+      veces1++;
+    }
+    else
+    {
+      vector3[veces2]=vector1[f];
+      veces2++;
+    }
+  }
+  document.write('Primer vector'+vector1.length+'<br>');
+  document.write('Segundo vector'+vector2.length+'<br>');
+  document.write('Tercer vector'+vector3.length+'<br>');
+  document.write('Vector 1.<br>');
+  for(f=0;f<vector1.length;f++)
+  {
+    document.write(vector1[f]+',');
+  }
+  document.write('<br>');
+  document.write('Vector 2.<br>');
+  for(f=0;f<vector2.length;f++)
+  {
+    document.write(vector2[f]+',');
+  }
+  document.write('<br>');
+  document.write('Vector 3.<br>');
+  for(f=0;f<vector3.length;f++)
+  {
+    document.write(vector3[f]+',');
+  }
+</script>
+  
+</body>
+</html>
